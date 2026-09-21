@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken June A. Elopre | Marketing Associate & Digital Content Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FDFCF7',
+                            100: '#F9F7F1',
+                            200: '#F2ECE1',
+                            300: '#E6DCB8'
+                        },
+                        charcoal: {
+                            800: '#2C2C2C',
+                            900: '#1A1A1A'
+                        },
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A059',
+                            600: '#A88339'
+                        },
+                        rose: {
+                            subtle: '#F7EBE8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFCF7;
+            color: #1A1A1A;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .serif-title {
+            font-family: 'Merriweather', serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 220, 200, 0.6);
+        }
+        .chic-shadow {
+            box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.15);
+        }
+        .chic-shadow-hover:hover {
+            box-shadow: 0 15px 35px -5px rgba(197, 160, 89, 0.25);
+            transform: translateY(-3px);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F9F7F1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A059;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-white">
+
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-cream-50/90 backdrop-blur-md border-b border-cream-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo / Name Badge -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <span class="w-10 h-10 rounded-full bg-charcoal-900 text-cream-50 flex items-center justify-center font-serif text-lg font-bold border border-gold-500/40 group-hover:bg-gold-500 transition-colors duration-300">
+                        KE
+                    </span>
+                    <div>
+                        <span class="font-serif text-lg font-bold tracking-tight text-charcoal-900 block leading-none">KEN JUNE</span>
+                        <span class="text-xs uppercase tracking-widest text-gold-600 font-medium">Marketing & Content</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-charcoal-800">
+                    <a href="#about" class="hover:text-gold-600 transition-colors">About</a>
+                    <a href="#competencies" class="hover:text-gold-600 transition-colors">Competencies</a>
+                    <a href="#brands" class="hover:text-gold-600 transition-colors">Brands & Socials</a>
+                    <a href="#pubmats" class="hover:text-gold-600 transition-colors">Pubmat Showcase</a>
+                    <a href="#experience" class="hover:text-gold-600 transition-colors">Experience</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-charcoal-900 text-cream-50 hover:bg-gold-500 transition-all duration-300 shadow-sm text-xs uppercase tracking-wider font-semibold">
+                        Get In Touch
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-charcoal-800 hover:text-gold-600 focus:outline-none" aria-label="Toggle Navigation">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream-100 border-b border-cream-200 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-charcoal-800 hover:text-gold-600 font-medium py-1">About</a>
+            <a href="#competencies" class="block text-charcoal-800 hover:text-gold-600 font-medium py-1">Competencies</a>
+            <a href="#brands" class="block text-charcoal-800 hover:text-gold-600 font-medium py-1">Brands & Socials</a>
+            <a href="#pubmats" class="block text-charcoal-800 hover:text-gold-600 font-medium py-1">Pubmat Showcase</a>
+            <a href="#experience" class="block text-charcoal-800 hover:text-gold-600 font-medium py-1">Experience</a>
+            <a href="#contact" class="block w-full text-center px-5 py-3 rounded-full bg-charcoal-900 text-cream-50 font-semibold text-xs uppercase tracking-wider">
+                Get In Touch
+            </a>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden bg-gradient-to-b from-cream-100 via-cream-50 to-cream-50">
+        <!-- Subtle decorative background shapes -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 -left-20 w-80 h-80 bg-rose-subtle/40 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left: Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cream-200/60 border border-gold-500/30 text-charcoal-900 text-xs font-semibold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                        Available for Marketing & Digital Content Strategy
+                    </div>
+
+                    <h1 class="serif-title text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal-900 leading-[1.15]">
+                        Ken June A. Elopre
+                    </h1>
+
+                    <p class="text-lg sm:text-xl font-light text-gold-600 tracking-wide font-serif italic">
+                        Marketing Associate & Digital Content Strategist
+                    </p>
+
+                    <p class="text-charcoal-800/80 leading-relaxed max-w-2xl text-base sm:text-lg font-normal">
+                        A proactive digital marketer based in Dipolog City, bridging structured growth marketing with chic visual storytelling. Specializing in brand positioning, Meta social campaigns, and high-impact digital pubmats.
+                    </p>
+
+                    <!-- Contact Quick Info -->
+                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-medium text-charcoal-800/90">
+                        <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/70 border border-cream-200">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-gold-500"></i> Dipolog City, Philippines
+                        </span>
+                        <a href="mailto:kenjunegonzales@gmail.com" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/70 border border-cream-200 hover:border-gold-500 transition-colors">
+                            <i data-lucide="mail" class="w-4 h-4 text-gold-500"></i> kenjunegonzales@gmail.com
+                        </a>
+                        <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/70 border border-cream-200">
+                            <i data-lucide="phone" class="w-4 h-4 text-gold-500"></i> 09638335321
+                        </span>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#pubmats" class="w-full sm:w-auto px-8 py-4 rounded-full bg-charcoal-900 text-cream-50 font-semibold text-xs uppercase tracking-widest hover:bg-gold-500 transition-all duration-300 shadow-md text-center">
+                            Explore Portfolio & Pubmats
+                        </a>
+                        <button onclick="downloadResume()" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-charcoal-900 border border-gold-500/40 font-semibold text-xs uppercase tracking-widest hover:bg-cream-100 transition-all duration-300 shadow-sm flex items-center justify-center gap-2">
+                            <i data-lucide="download" class="w-4 h-4 text-gold-600"></i> Download Resume
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Portrait Image Card with Refined Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Background Accent Frame -->
+                        <div class="absolute inset-0 bg-gold-400/20 rounded-3xl transform rotate-3 scale-105 border border-gold-500/30 transition-transform duration-500 hover:rotate-1"></div>
+                        
+                        <!-- Portrait Image Container -->
+                        <div class="relative rounded-3xl overflow-hidden bg-white p-3 border border-cream-200 chic-shadow">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczODWJ5E5YqA2jvhRzY4i010Ea031e8VfP-b6yO4uR2G2q8uM2g24sU_3_N=w1000-h1000-no" 
+                                 alt="Ken June A. Elopre - Marketing Associate" 
+                                 class="w-full h-auto object-cover rounded-2xl filter brightness-[1.02] contrast-[1.01]"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x750/1A1A1A/FDFCF7?text=Ken+June+Elopre';">
+                            
+                            <div class="p-4 text-center bg-cream-50/90 backdrop-blur-md rounded-xl mt-3 border border-cream-200">
+                                <h3 class="serif-title font-bold text-charcoal-900 text-lg">Ken June A. Elopre</h3>
+                                <p class="text-xs text-gold-600 font-medium tracking-wide uppercase mt-0.5">BA Political Science | Content Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
+                <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Editorial Profile</span>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-charcoal-900">A Classy Approach to Digital Growth</h2>
+                <div class="w-16 h-0.5 bg-gold-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <!-- Professional Mindset Card -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 flex flex-col justify-between border border-cream-200">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold-400/10 flex items-center justify-center text-gold-600 mb-2">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="serif-title text-xl font-bold text-charcoal-900">Strategic & Detail-Oriented</h3>
+                        <p class="text-charcoal-800/80 leading-relaxed text-sm sm:text-base font-normal">
+                            With over two years of professional experience in administrative support, digital marketing, social media management, content creation, and project coordination. I help businesses streamline operations, strengthen their online presence, and execute marketing initiatives through organized workflows and creative problem-solving.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-cream-200/80 text-xs text-gold-600 font-semibold tracking-wider uppercase">
+                        Reliable Virtual & On-Ground Support
+                    </div>
+                </div>
+
+                <!-- Academic & Editorial Leadership Card -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 flex flex-col justify-between border border-cream-200">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold-400/10 flex items-center justify-center text-gold-600 mb-2">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="serif-title text-xl font-bold text-charcoal-900">Leadership & Academic Foundation</h3>
+                        <p class="text-charcoal-800/80 leading-relaxed text-sm sm:text-base font-normal">
+                            Graduated with a Bachelor of Arts in Political Science from Jose Rizal Memorial State University (JRMSU). Served as Associate Editor-in-Chief for <em>The State Collegian</em>, leading editorial teams, managing publication schedules, and crafting high-impact communications under strict journalistic standards.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-cream-200/80 text-xs text-gold-600 font-semibold tracking-wider uppercase">
+                        Analytical Thinking & Communication
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencies" class="py-20 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Specialized Expertise</span>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-charcoal-900">Core Competencies</h2>
+                <p class="text-charcoal-800/70 max-w-xl mx-auto text-sm">Comprehensive digital marketing, visual content creation, and administrative management capabilities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Competency Item 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="compass" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Digital Marketing Planning</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Designing end-to-end digital roadmaps that align campaign goals with measurable ROI and brand awareness.</p>
+                </div>
+
+                <!-- Competency Item 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="target" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Brand Positioning</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Carving distinct market presence, establishing brand voice, aesthetics, and targeted audience engagement.</p>
+                </div>
+
+                <!-- Competency Item 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="share-2" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Social Media Campaigns</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Managing multi-brand content calendars, organic growth strategies, and scheduling via Meta Business Suite.</p>
+                </div>
+
+                <!-- Competency Item 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Copywriting & Storytelling</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Crafting compelling promotional captions, official press statements, and persuasive ad copy.</p>
+                </div>
+
+                <!-- Competency Item 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="layout" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Social Media Pubmats</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Designing chic, eye-catching visual publication materials, promotional posters, and Canva graphics.</p>
+                </div>
+
+                <!-- Competency Item 6 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="megaphone" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Meta / Facebook Advertising</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Running targeted ad campaigns, boosting posts, analyzing performance metrics, and optimizing ad spend.</p>
+                </div>
+
+                <!-- Competency Item 7 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="printer" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Marketing Collaterals</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Creating branded print and digital collateral including banners, event merchandise, and infographics.</p>
+                </div>
+
+                <!-- Competency Item 8 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="layers" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">On-Ground + Digital Campaigns</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Integrating physical event coordination with online promotional pushes for maximum community traction.</p>
+                </div>
+
+                <!-- Competency Item 9 -->
+                <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow-hover transition-all duration-300">
+                    <div class="w-10 h-10 rounded-lg bg-cream-100 flex items-center justify-center text-gold-600 mb-4">
+                        <i data-lucide="users" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-charcoal-900 mb-2">Customer Engagement & Support</h3>
+                    <p class="text-xs text-charcoal-800/70 leading-relaxed">Prompt online inquiry assistance, client escalation handling, and fostering warm customer relations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="py-20 bg-white border-t border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Brand Portfolio</span>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-charcoal-900">Managed Facebook Profiles</h2>
+                <p class="text-charcoal-800/70 max-w-xl mx-auto text-sm">Key client brands and corporate platforms managed through content creation, scheduling, and ad strategy.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Brand Card 1: Tactical Asia -->
+                <div class="bg-cream-50 rounded-2xl p-6 border border-cream-200 hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="w-12 h-12 rounded-xl bg-charcoal-900 text-gold-400 flex items-center justify-center font-bold text-xl shadow-sm">
+                                TA
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-cream-200 text-charcoal-800 text-xs font-semibold">Tactical & Outdoor</span>
+                        </div>
+                        <div>
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900 group-hover:text-gold-600 transition-colors">Tactical Asia</h3>
+                            <p class="text-xs text-charcoal-800/70 mt-1">Leading tactical gear, outdoor equipment, and active lifestyle brand digital presence.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-cream-200 flex items-center justify-between">
+                        <span class="text-xs font-medium text-gold-600">Facebook Page</span>
+                        <a href="https://www.facebook.com/TacticalAsia" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-charcoal-900 text-cream-50 hover:bg-gold-500 text-xs font-medium transition-colors">
+                            Visit Profile <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand Card 2: Funfinity -->
+                <div class="bg-cream-50 rounded-2xl p-6 border border-cream-200 hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="w-12 h-12 rounded-xl bg-gold-500 text-white flex items-center justify-center font-bold text-xl shadow-sm">
+                                FF
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-cream-200 text-charcoal-800 text-xs font-semibold">Entertainment & Toys</span>
+                        </div>
+                        <div>
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900 group-hover:text-gold-600 transition-colors">Funfinity</h3>
+                            <p class="text-xs text-charcoal-800/70 mt-1">Vibrant promotional campaigns, consumer engagement, and creative product pubmats.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-cream-200 flex items-center justify-between">
+                        <span class="text-xs font-medium text-gold-600">Facebook Page</span>
+                        <a href="https://www.facebook.com/funfinityph" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-charcoal-900 text-cream-50 hover:bg-gold-500 text-xs font-medium transition-colors">
+                            Visit Profile <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand Card 3: Aetrium -->
+                <div class="bg-cream-50 rounded-2xl p-6 border border-cream-200 hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="w-12 h-12 rounded-xl bg-charcoal-800 text-cream-100 flex items-center justify-center font-bold text-xl shadow-sm">
+                                AE
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-cream-200 text-charcoal-800 text-xs font-semibold">Lifestyle & Space</span>
+                        </div>
+                        <div>
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900 group-hover:text-gold-600 transition-colors">Aetrium</h3>
+                            <p class="text-xs text-charcoal-800/70 mt-1">Elegant venue and lifestyle brand social management emphasizing sleek aesthetics.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-cream-200 flex items-center justify-between">
+                        <span class="text-xs font-medium text-gold-600">Facebook Page</span>
+                        <a href="https://www.facebook.com/aetrium.ph" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-charcoal-900 text-cream-50 hover:bg-gold-500 text-xs font-medium transition-colors">
+                            Visit Profile <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand Card 4: Vita Drug -->
+                <div class="bg-cream-50 rounded-2xl p-6 border border-cream-200 hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="w-12 h-12 rounded-xl bg-gold-600 text-white flex items-center justify-center font-bold text-xl shadow-sm">
+                                VD
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-cream-200 text-charcoal-800 text-xs font-semibold">Health & Pharma</span>
+                        </div>
+                        <div>
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900 group-hover:text-gold-600 transition-colors">Vita Drug</h3>
+                            <p class="text-xs text-charcoal-800/70 mt-1">Health awareness infographics, promotional product announcements, and customer care.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-cream-200 flex items-center justify-between">
+                        <span class="text-xs font-medium text-gold-600">Facebook Page</span>
+                        <a href="https://www.facebook.com/vitadrug" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-charcoal-900 text-cream-50 hover:bg-gold-500 text-xs font-medium transition-colors">
+                            Visit Profile <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand Card 5: Rega Hub -->
+                <div class="bg-cream-50 rounded-2xl p-6 border border-cream-200 hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="w-12 h-12 rounded-xl bg-charcoal-900 text-gold-400 flex items-center justify-center font-bold text-xl shadow-sm">
+                                RH
+                            </span>
+                            <span class="px-3 py-1 rounded-full bg-cream-200 text-charcoal-800 text-xs font-semibold">Enterprise & Hub</span>
+                        </div>
+                        <div>
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900 group-hover:text-gold-600 transition-colors">Rega Hub</h3>
+                            <p class="text-xs text-charcoal-800/70 mt-1">Multi-brand corporate campaigns, administrative coordination, and promotional calendar execution.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-cream-200 flex items-center justify-between">
+                        <span class="text-xs font-medium text-gold-600">Facebook Page</span>
+                        <a href="https://www.facebook.com/regahub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-charcoal-900 text-cream-50 hover:bg-gold-500 text-xs font-medium transition-colors">
+                            Visit Profile <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Strategic Summary Tile -->
+                <div class="bg-gradient-to-br from-charcoal-900 to-charcoal-800 text-cream-50 rounded-2xl p-6 border border-gold-500/30 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-gold-400"></i>
+                        <h3 class="serif-title font-bold text-xl text-white">Consistent Brand Voice</h3>
+                        <p class="text-xs text-cream-200/80 leading-relaxed">
+                            Maintaining cohesive branding, active follower engagement, and unified visual identity across all platforms using Canva and Meta Suite.
+                        </p>
+                    </div>
+                    <div class="pt-4 text-xs text-gold-400 font-medium">
+                        ✦ Multi-brand Content Management
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="pubmats" class="py-20 bg-cream-50 border-t border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Visual Portfolio</span>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-charcoal-900">Creative Pubmats Showcase</h2>
+                <p class="text-charcoal-800/70 max-w-xl mx-auto text-sm">Curated publication materials created for promotional campaigns, product launches, and editorial releases.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                <button onclick="filterPubmats('all')" class="pubmat-tab px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 bg-charcoal-900 text-cream-50 active-tab" data-filter="all">
+                    All Pubmats
+                </button>
+                <button onclick="filterPubmats('social')" class="pubmat-tab px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 bg-white text-charcoal-800 border border-cream-200 hover:border-gold-500" data-filter="social">
+                    Social Media Graphics
+                </button>
+                <button onclick="filterPubmats('marketing')" class="pubmat-tab px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 bg-white text-charcoal-800 border border-cream-200 hover:border-gold-500" data-filter="marketing">
+                    Marketing Collaterals
+                </button>
+                <button onclick="filterPubmats('campaign')" class="pubmat-tab px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 bg-white text-charcoal-800 border border-cream-200 hover:border-gold-500" data-filter="campaign">
+                    Campaign Posters
+                </button>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="pubmat-grid">
+                
+                <!-- Item 1 -->
+                <div class="pubmat-card group cursor-pointer bg-white rounded-2xl overflow-hidden border border-cream-200 chic-shadow-hover transition-all duration-300" data-category="social"
+                     onclick="openPubmatModal('Tactical Gear Promotion', 'Social Media Graphics', 'Designed for Tactical Asia\'s outdoor weekend sale campaign. Engineered with strong typography and high-contrast visuals.', 'Canva, Meta Suite', 'https://placehold.co/800x800/1A1A1A/FDFCF7?text=TACTICAL+ASIA+PUBMAT')">
+                    <div class="relative overflow-hidden aspect-square bg-cream-100">
+                        <img src="https://placehold.co/800x800/1A1A1A/FDFCF7?text=TACTICAL+ASIA+PUBMAT" alt="Tactical Gear Pubmat" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-cream-50 text-charcoal-900 rounded-full text-xs font-bold shadow-md">Inspect Design</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Social Media Graphics</span>
+                        <h3 class="serif-title font-bold text-lg text-charcoal-900 mt-1">Tactical Gear Promo Banner</h3>
+                        <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2">High-impact social promotional layout focusing on product clarity and call-to-action.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="pubmat-card group cursor-pointer bg-white rounded-2xl overflow-hidden border border-cream-200 chic-shadow-hover transition-all duration-300" data-category="campaign"
+                     onclick="openPubmatModal('Glorious Fantasyland Event Poster', 'Campaign Posters', 'Tour & seasonal promotion poster designed for UnliFuDap - Glorious Fantasyland. Crafted with festive and inviting color schemes.', 'Canva, Photoshop Elements', 'https://placehold.co/800x800/C5A059/FDFCF7?text=FANTASYLAND+EVENT')">
+                    <div class="relative overflow-hidden aspect-square bg-cream-100">
+                        <img src="https://placehold.co/800x800/C5A059/FDFCF7?text=FANTASYLAND+EVENT" alt="Fantasyland Poster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-cream-50 text-charcoal-900 rounded-full text-xs font-bold shadow-md">Inspect Design</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Campaign Posters</span>
+                        <h3 class="serif-title font-bold text-lg text-charcoal-900 mt-1">Tour & Festival Launch</h3>
+                        <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2">Promotional poster created for Glorious Fantasyland guest tours and holiday packages.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="pubmat-card group cursor-pointer bg-white rounded-2xl overflow-hidden border border-cream-200 chic-shadow-hover transition-all duration-300" data-category="marketing"
+                     onclick="openPubmatModal('Vita Drug Wellness Flyer', 'Marketing Collaterals', 'Educational infographic flyer highlighting essential vitamins and seasonal pharmacy deals for Vita Drug clients.', 'Canva Graphic Suite', 'https://placehold.co/800x800/2C2C2C/FDFCF7?text=VITA+DRUG+COLLATERAL')">
+                    <div class="relative overflow-hidden aspect-square bg-cream-100">
+                        <img src="https://placehold.co/800x800/2C2C2C/FDFCF7?text=VITA+DRUG+COLLATERAL" alt="Vita Drug Collateral" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-cream-50 text-charcoal-900 rounded-full text-xs font-bold shadow-md">Inspect Design</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Marketing Collaterals</span>
+                        <h3 class="serif-title font-bold text-lg text-charcoal-900 mt-1">Health & Wellness Flyer</h3>
+                        <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2">Educational health visual guide designed for print and digital distribution.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="pubmat-card group cursor-pointer bg-white rounded-2xl overflow-hidden border border-cream-200 chic-shadow-hover transition-all duration-300" data-category="social"
+                     onclick="openPubmatModal('Aetrium Venue Highlight', 'Social Media Graphics', 'Clean chic minimalism grid showcase emphasizing venue elegance, soft lighting, and luxury atmosphere.', 'Canva Pro', 'https://placehold.co/800x800/F2ECE1/1A1A1A?text=AETRIUM+LIFESTYLE')">
+                    <div class="relative overflow-hidden aspect-square bg-cream-100">
+                        <img src="https://placehold.co/800x800/F2ECE1/1A1A1A?text=AETRIUM+LIFESTYLE" alt="Aetrium Social Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-cream-50 text-charcoal-900 rounded-full text-xs font-bold shadow-md">Inspect Design</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Social Media Graphics</span>
+                        <h3 class="serif-title font-bold text-lg text-charcoal-900 mt-1">Aetrium Elegant Showcase</h3>
+                        <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2">Luxury aesthetic social post tailored to high-end event space positioning.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="pubmat-card group cursor-pointer bg-white rounded-2xl overflow-hidden border border-cream-200 chic-shadow-hover transition-all duration-300" data-category="campaign"
+                     onclick="openPubmatModal('Funfinity Toy Launch', 'Campaign Posters', 'Interactive toy release campaign layout featuring dynamic layouts and bright color accents.', 'Canva Studio', 'https://placehold.co/800x800/D4AF37/1A1A1A?text=FUNFINITY+CAMPAIGN')">
+                    <div class="relative overflow-hidden aspect-square bg-cream-100">
+                        <img src="https://placehold.co/800x800/D4AF37/1A1A1A?text=FUNFINITY+CAMPAIGN" alt="Funfinity Campaign" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-cream-50 text-charcoal-900 rounded-full text-xs font-bold shadow-md">Inspect Design</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Campaign Posters</span>
+                        <h3 class="serif-title font-bold text-lg text-charcoal-900 mt-1">Funfinity Season Launch</h3>
+                        <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2">Vibrant and playful publication layout designed for consumer interaction.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="pubmat-card group cursor-pointer bg-white rounded-2xl overflow-hidden border border-cream-200 chic-shadow-hover transition-all duration-300" data-category="marketing"
+                     onclick="openPubmatModal('The State Collegian Issue Layout', 'Marketing Collaterals', 'Official university editorial newsletter visual header and print edition pubmat.', 'InDesign / Canva', 'https://placehold.co/800x800/1A1A1A/D4AF37?text=STATE+COLLEGIAN+EDITORIAL')">
+                    <div class="relative overflow-hidden aspect-square bg-cream-100">
+                        <img src="https://placehold.co/800x800/1A1A1A/D4AF37?text=STATE+COLLEGIAN+EDITORIAL" alt="Journalism Publication" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-cream-50 text-charcoal-900 rounded-full text-xs font-bold shadow-md">Inspect Design</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Marketing Collaterals</span>
+                        <h3 class="serif-title font-bold text-lg text-charcoal-900 mt-1">University Editorial Pubmat</h3>
+                        <p class="text-xs text-charcoal-800/70 mt-1 line-clamp-2">Editorial publication cover designed during Associate EIC tenure at JRMSU.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-white border-t border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Career Journey</span>
+                <h2 class="serif-title text-3xl sm:text-4xl font-bold text-charcoal-900">Professional Experience</h2>
+                <p class="text-charcoal-800/70 max-w-xl mx-auto text-sm">A history of delivering excellence in marketing, operations, and editorial leadership.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-cream-200 space-y-12">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-5 h-5 rounded-full bg-gold-500 border-4 border-white shadow-sm"></div>
+                    <div class="bg-cream-50 p-6 rounded-2xl border border-cream-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900">Marketing Associate</h3>
+                            <span class="text-xs font-semibold px-3 py-1 bg-cream-200 text-charcoal-800 rounded-full w-fit">June 2025 - September 13, 2026</span>
+                        </div>
+                        <p class="text-sm font-medium text-gold-600 mb-4">Rega Hub Inc.</p>
+                        <ul class="text-xs sm:text-sm text-charcoal-800/80 space-y-2 list-disc pl-4 leading-relaxed">
+                            <li>Planned and managed strategic content calendars across multiple brand profiles.</li>
+                            <li>Designed digital marketing pubmats, promotional graphics, and advertisements using Canva.</li>
+                            <li>Scheduled and monitored social media performance via Meta Business Suite.</li>
+                            <li>Conducted market research and coordinated on-ground seasonal promotions and community activities.</li>
+                            <li>Maintained strict brand visual consistency and supported customer engagement inquiries.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-5 h-5 rounded-full bg-charcoal-800 border-4 border-white shadow-sm"></div>
+                    <div class="bg-cream-50 p-6 rounded-2xl border border-cream-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900">Marketing Associate / Tour Coordinator</h3>
+                            <span class="text-xs font-semibold px-3 py-1 bg-cream-200 text-charcoal-800 rounded-full w-fit">Jan 2024 - June 2024</span>
+                        </div>
+                        <p class="text-sm font-medium text-gold-600 mb-4">UnliFuDap - Glorious Fantasyland</p>
+                        <ul class="text-xs sm:text-sm text-charcoal-800/80 space-y-2 list-disc pl-4 leading-relaxed">
+                            <li>Coordinated customer tour bookings, event scheduling, and guest customer service inquiries.</li>
+                            <li>Created social media promotional content and supported full-scale marketing campaigns.</li>
+                            <li>Organized promotional customer engagement programs and maintained accurate administrative logs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-5 h-5 rounded-full bg-cream-300 border-4 border-white shadow-sm"></div>
+                    <div class="bg-cream-50 p-6 rounded-2xl border border-cream-200">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <h3 class="serif-title font-bold text-xl text-charcoal-900">Student Assistant</h3>
+                            <span class="text-xs font-semibold px-3 py-1 bg-cream-200 text-charcoal-800 rounded-full w-fit">Aug 2021 - 2023</span>
+                        </div>
+                        <p class="text-sm font-medium text-gold-600 mb-4">Office of the University President - JRMSU</p>
+                        <ul class="text-xs sm:text-sm text-charcoal-800/80 space-y-2 list-disc pl-4 leading-relaxed">
+                            <li>Provided high-level administrative support to university executives and managed confidential files.</li>
+                            <li>Prepared official letters, interdepartmental communications, and structured administrative reports.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-cream-50 border-t border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Education & Leadership -->
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Academic Foundation</span>
+                        <h2 class="serif-title text-3xl font-bold text-charcoal-900">Education & Leadership</h2>
+                    </div>
+
+                    <!-- Degree Card -->
+                    <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow">
+                        <span class="text-xs font-bold text-gold-600 uppercase">Aug 2021 - May 2025</span>
+                        <h3 class="serif-title text-xl font-bold text-charcoal-900 mt-1">Bachelor of Arts in Political Science</h3>
+                        <p class="text-xs text-charcoal-800/80 font-medium mt-1">Jose Rizal Memorial State University - Main Campus</p>
+                    </div>
+
+                    <!-- Leadership Highlight -->
+                    <div class="bg-white p-6 rounded-2xl border border-cream-200 chic-shadow space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-gold-600 uppercase">Editorial Leadership</span>
+                            <i data-lucide="newspaper" class="w-5 h-5 text-gold-600"></i>
+                        </div>
+                        <h3 class="serif-title text-lg font-bold text-charcoal-900">The State Collegian (JRMSU)</h3>
+                        <p class="text-xs text-gold-600 font-semibold">Progressed: News Writer ➔ News Editor ➔ Associate Editor-in-Chief</p>
+                        <p class="text-xs text-charcoal-800/80 leading-relaxed">
+                            Led the editorial board, assigned writer tasks, reviewed content, and managed publication timelines to maintain journalistic excellence.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Credentials</span>
+                        <h2 class="serif-title text-3xl font-bold text-charcoal-900">Certifications & Training</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-xl border border-cream-200 flex items-start gap-4">
+                            <div class="p-2.5 rounded-lg bg-cream-100 text-gold-600 mt-0.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-sm text-charcoal-900">SPARK General Virtual Assistance Technical Training</h4>
+                                <p class="text-xs text-charcoal-800/70">DICT (Department of Information & Communications Technology) • July 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-cream-200 flex items-start gap-4">
+                            <div class="p-2.5 rounded-lg bg-cream-100 text-gold-600 mt-0.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-sm text-charcoal-900">Graphic Design using Canva</h4>
+                                <p class="text-xs text-charcoal-800/70">DICT • June 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-cream-200 flex items-start gap-4">
+                            <div class="p-2.5 rounded-lg bg-cream-100 text-gold-600 mt-0.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-sm text-charcoal-900">AI for MSMEs / Business Owners Webinar</h4>
+                                <p class="text-xs text-charcoal-800/70">DICT • May 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-cream-200 flex items-start gap-4">
+                            <div class="p-2.5 rounded-lg bg-cream-100 text-gold-600 mt-0.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-sm text-charcoal-900">Zamboanga Del Norte's Information Volunteer</h4>
+                                <p class="text-xs text-charcoal-800/70">Philippine Information Agency (PIA) Region IX • November 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white border-t border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-3">
+                        <span class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Initiate Collaboration</span>
+                        <h2 class="serif-title text-3xl sm:text-4xl font-bold text-charcoal-900">Let's Elevate Your Brand</h2>
+                        <p class="text-charcoal-800/70 text-sm leading-relaxed">
+                            Interested in expanding your digital footprint, launching social campaigns, or crafting polished pubmats? Reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-cream-50 border border-cream-200">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-600 flex items-center justify-center">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-wider font-semibold text-gold-600">Email Direct</p>
+                                <a href="mailto:kenjunegonzales@gmail.com" class="text-sm font-semibold text-charcoal-900 hover:text-gold-600 transition-colors">kenjunegonzales@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-cream-50 border border-cream-200">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-600 flex items-center justify-center">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-wider font-semibold text-gold-600">Mobile Hotline</p>
+                                <a href="tel:09638335321" class="text-sm font-semibold text-charcoal-900 hover:text-gold-600 transition-colors">+63 963 833 5321</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-cream-50 border border-cream-200">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-600 flex items-center justify-center">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-wider font-semibold text-gold-600">Location</p>
+                                <p class="text-sm font-semibold text-charcoal-900">Dipolog City, Zamboanga del Norte, PH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-7">
+                    <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="bg-cream-50 p-8 rounded-3xl border border-cream-200 chic-shadow space-y-6">
+                        <h3 class="serif-title text-xl font-bold text-charcoal-900 mb-2">Send a Strategy Inquiry</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-charcoal-900 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-white border border-cream-200 text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-charcoal-900 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl bg-white border border-cream-200 text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-charcoal-900 uppercase tracking-wider mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-white border border-cream-200 text-sm focus:outline-none focus:border-gold-500 transition-colors text-charcoal-800">
+                                <option>Social Media Pubmats & Graphic Design</option>
+                                <option>Full Digital Marketing Campaign</option>
+                                <option>Meta / Facebook Ad Management</option>
+                                <option>Brand Positioning & Strategy</option>
+                                <option>Virtual Assistance & Coordination</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-charcoal-900 uppercase tracking-wider mb-2">Project Brief / Message</label>
+                            <textarea rows="4" required placeholder="Tell me about your brand and goals..." class="w-full px-4 py-3 rounded-xl bg-white border border-cream-200 text-sm focus:outline-none focus:border-gold-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-full bg-charcoal-900 text-cream-50 font-semibold text-xs uppercase tracking-widest hover:bg-gold-500 transition-all duration-300 shadow-md">
+                            Submit Inquiry
+                        </button>
+
+                        <div id="form-feedback" class="hidden text-center text-xs font-medium text-emerald-700 bg-emerald-50 p-3 rounded-lg border border-emerald-200">
+                            Thank you! Your inquiry has been received. I will get back to you shortly.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-charcoal-900 text-cream-50 py-12 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="text-center sm:text-left">
+                <p class="serif-title font-bold text-lg text-white">Ken June A. Elopre</p>
+                <p class="text-xs text-cream-200/60 mt-0.5">Marketing Associate & Digital Content Strategist • Dipolog City</p>
+            </div>
+
+            <p class="text-xs text-cream-200/50">
+                &copy; <span id="year"></span> Ken June Elopre. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <div id="pubmat-modal" class="fixed inset-0 z-50 hidden bg-charcoal-900/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6">
+        <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden chic-shadow border border-cream-200 relative animate-in fade-in zoom-in duration-200">
+            <!-- Modal Close Button -->
+            <button onclick="closePubmatModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-cream-100 hover:bg-gold-500 hover:text-white flex items-center justify-center transition-colors text-charcoal-900">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="p-6 sm:p-8 space-y-6">
+                <!-- Preview Image Frame -->
+                <div class="aspect-video bg-cream-100 rounded-2xl overflow-hidden border border-cream-200">
+                    <img id="modal-img" src="" alt="Pubmat Large View" class="w-full h-full object-cover">
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span id="modal-category" class="text-[10px] uppercase tracking-widest text-gold-600 font-bold">Category</span>
+                        <span id="modal-tools" class="text-xs font-semibold px-3 py-1 bg-cream-100 rounded-full text-charcoal-800">Canva</span>
+                    </div>
+
+                    <h3 id="modal-title" class="serif-title font-bold text-2xl text-charcoal-900">Title</h3>
+                    <p id="modal-desc" class="text-xs sm:text-sm text-charcoal-800/80 leading-relaxed">Description summary...</p>
+                </div>
+
+                <div class="pt-4 border-t border-cream-200 flex justify-end">
+                    <button onclick="closePubmatModal()" class="px-6 py-2.5 bg-charcoal-900 text-cream-50 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-gold-500 transition-colors">
+                        Close Preview
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter Pubmats Logic
+        function filterPubmats(filter) {
+            const tabs = document.querySelectorAll('.pubmat-tab');
+            const cards = document.querySelectorAll('.pubmat-card');
+
+            tabs.forEach(tab => {
+                if (tab.getAttribute('data-filter') === filter) {
+                    tab.classList.remove('bg-white', 'text-charcoal-800');
+                    tab.classList.add('bg-charcoal-900', 'text-cream-50');
+                } else {
+                    tab.classList.remove('bg-charcoal-900', 'text-cream-50');
+                    tab.classList.add('bg-white', 'text-charcoal-800');
+                }
+            });
+
+            cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal Logic
+        function openPubmatModal(title, category, desc, tools, imgUrl) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-category').textContent = category;
+            document.getElementById('modal-desc').textContent = desc;
+            document.getElementById('modal-tools').textContent = 'Tools: ' + tools;
+            document.getElementById('modal-img').src = imgUrl;
+
+            document.getElementById('pubmat-modal').classList.remove('hidden');
+        }
+
+        function closePubmatModal() {
+            document.getElementById('pubmat-modal').classList.add('hidden');
+        }
+
+        // Form Submit
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const feedback = document.getElementById('form-feedback');
+            feedback.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                feedback.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Simulated Resume Download
+        function downloadResume() {
+            const dummyContent = "KEN JUNE A. ELOPRE - RESUME\n\nMarketing Associate & Content Strategist\nEmail: kenjunegonzales@gmail.com\nPhone: 09638335321\nLocation: Dipolog City, Philippines";
+            const blob = new Blob([dummyContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Ken_June_Elopre_Resume.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
